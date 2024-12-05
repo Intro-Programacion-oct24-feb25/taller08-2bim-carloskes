@@ -1,20 +1,44 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package problemas;
+package paquete04;
+
+import java.util.Locale;
+import java.util.Scanner;
 
 /**
  *
- * @author reroes
+ * @author utpl
  */
-public class Problema03 {
+public class Ejercicio3 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
+
+        String asd = "*";
+        int contador;
+
+        int i;
+
+        String cadenaFinal = "";
+
+        for (i = 1; i <= 5; i++) {
+            for (contador = 1; contador <= i; contador++) {
+
+                System.out.printf("%s", "*");
+            }
+            System.out.println();
+        }
+        for (i = 5; i >= 1; i--) {
+            for (contador = 1; contador <= i; contador++) {
+
+                System.out.printf("%s", "*");
+            }
+            System.out.println();
+
+        }
+
     }
-    
 }
